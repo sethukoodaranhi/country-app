@@ -1,0 +1,82 @@
+#root {
+  width: 100%;
+  margin: 0;
+  max-width: none;
+  overflow: hidden;
+}
+
+.login-container {
+  width: 100% !important;
+  margin: 0;
+  max-width: none !important;
+}
+
+.create_acc_link {
+  text-decoration: none;
+}
+
+.form-input::placeholder {
+  font-size: 18px;
+}
+
+.login-check .form-check-input {
+  width: 1.5rem;
+  height: 1.5rem;
+
+}
+
+.login-check .form-check-label {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.icon-container {
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media (max-width: 768px) {
+  .login-container p {
+    font-size: 14px;
+  }
+
+  .login-container .form-control {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+.login-right-image {
+  background-image: url('./assets/images/leaf-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.upper-line-border {
+  border-top: 2px solid black;
+}
+
+.bottom-line-border {
+  border-bottom: 2px solid black;
+}
+
+.flag-img {
+  object-fit: cover;
+  width: 80px;
+  height: 50px;
+}
+.navbar-nav .nav-link.active{
+  border-bottom: 2px solid black !important;
+}
