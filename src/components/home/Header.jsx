@@ -20,7 +20,7 @@ function Header({ countries }) {
     }
   }
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" bg="primary" data-bs-theme="dark">
+    <Navbar expand="lg" className="header">
       <Container>
         <Navbar.Brand href="#">Countries</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

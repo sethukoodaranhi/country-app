@@ -18,24 +18,26 @@ function HomePage() {
     useEffect(() => {
         dispacth(setcountryList(countriesList?.data))
     }, [countriesList?.data])
-    
+
     return (
         <>
-            <Header countries={countriesList?.data}/>
+            <Header countries={countriesList?.data} />
             <div className="container">
-                <div className="row my-3">
+                <div className="row my-5">
                     <div className="col-lg-5 upper-line-border">
                     </div>
                     <div className="col-lg-2 text-center p-0">
-                        <h1 className="mb-0">WELCOME</h1>
+                        <h1 className="mb-0" style={{fontWeight:"bold"}}>WELCOME</h1>
                     </div>
                     <div className="col-lg-5 bottom-line-border">
 
                     </div>
                 </div>
                 <Slider />
-                <Countries />
-                <Footer/>
+                <Countries
+                    apiLoading={countriesList.isLoading}
+                />
+                <Footer />
             </div>
 
         </>
